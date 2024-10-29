@@ -8,7 +8,6 @@ interface CustomStyle extends CSSProperties {
 	"--loaderColor"?: string
 	"--hover-textColor"?: string
 	"--tracking"?: string
-	"--typingEffect-width"?: string
 }
 
 type Props = Readonly<{

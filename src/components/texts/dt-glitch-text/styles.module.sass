@@ -2,7 +2,7 @@
   display: flex
   align-items: center
   justify-content: center
-  color: #fff
+  color: var(--color, #f0f0f0)
   font-size: var(--fontSize, 100px)
   letter-spacing: calc( var(--fontSize, 100px) * -0.07 )
 
@@ -14,7 +14,6 @@
     content: attr(title)
     position: absolute
     left: 0
-
 
   &::before 
     animation: glitchTop 1s linear infinite

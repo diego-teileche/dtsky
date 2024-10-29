@@ -1,27 +1,27 @@
 .box
   position: relative
   display: flex
-  width: var(--size, 340px)
-  height: calc( var(--size, 340px) * 0.589 )
+  width: var(--size, 100px)
+  height: calc( var(--size, 100px) * 0.589 )
 
 .box .circle
   position: relative
-  min-width: calc( var(--size, 340px) * 0.589 )
-  height: calc( var(--size, 340px) * 0.589 )
-  border: calc( var(--size, 340px) * 0.074 ) solid #fff
+  min-width: calc( var(--size, 100px) * 0.589 )
+  height: calc( var(--size, 100px) * 0.589 )
+  border: calc( var(--size, 100px) * 0.074 ) solid #fff
   border-radius: 50%
 
   &:nth-child(2)
-    left: calc( var(--size, 340px) * -0.1764705882 )
-    border: calc( var(--size, 340px) * 0.074 ) solid #f00
+    left: calc( var(--size, 100px) * -0.1764705882 )
+    border: calc( var(--size, 100px) * 0.074 ) solid #f00
 
   &:nth-child(1)::before
     content: ''
     position: absolute
-    inset: calc( var(--size, 340px) * -0.074 )
-    border: calc( var(--size, 340px) * 0.074 ) solid transparent
-    border-top: calc( var(--size, 340px) * 0.074 ) solid #fff
-    border-right: calc( var(--size, 340px) * 0.074 ) solid #fff
+    inset: calc( var(--size, 100px) * -0.074 )
+    border: calc( var(--size, 100px) * 0.074 ) solid transparent
+    border-top: calc( var(--size, 100px) * 0.074 ) solid #fff
+    border-right: calc( var(--size, 100px) * 0.074 ) solid #fff
     border-radius: 50%
     z-index: 100
     transform: rotate(-45deg)
@@ -29,10 +29,10 @@
   &:nth-child(1)::after
     content: ''
     position: absolute
-    inset: calc( var(--size, 340px) * -0.074 )
+    inset: calc( var(--size, 100px) * -0.074 )
     border-radius: 50%
-    border: calc( var(--size, 340px) * 0.074 ) solid transparent
-    border-right: calc( var(--size, 340px) * 0.074 ) solid #111
+    border: calc( var(--size, 100px) * 0.074 ) solid transparent
+    border-right: calc( var(--size, 100px) * 0.074 ) solid #111
     z-index: 1
     transform: rotate(-65deg)
     filter: blur(15px)
@@ -40,10 +40,10 @@
   &:nth-child(2)::before
     content: ''
     position: absolute
-    inset: calc( var(--size, 340px) * -0.074 )
-    border: calc( var(--size, 340px) * 0.074 ) solid transparent
-    border-bottom: calc( var(--size, 340px) * 0.074 ) solid #f00
-    border-left: calc( var(--size, 340px) * 0.074 ) solid #f00
+    inset: calc( var(--size, 100px) * -0.074 )
+    border: calc( var(--size, 100px) * 0.074 ) solid transparent
+    border-bottom: calc( var(--size, 100px) * 0.074 ) solid #f00
+    border-left: calc( var(--size, 100px) * 0.074 ) solid #f00
     border-radius: 50%
     z-index: 100
     transform: rotate(-45deg)
@@ -51,10 +51,10 @@
   &:nth-child(2)::after
     content: ''
     position: absolute
-    inset: calc( var(--size, 340px) * -0.074 )
+    inset: calc( var(--size, 100px) * -0.074 )
     border-radius: 50%
-    border: calc( var(--size, 340px) * 0.074 ) solid transparent
-    border-left: calc( var(--size, 340px) * 0.074 ) solid #111
+    border: calc( var(--size, 100px) * 0.074 ) solid transparent
+    border-left: calc( var(--size, 100px) * 0.074 ) solid #111
     z-index: 1
     transform: rotate(-65deg)
     filter: blur(15px)

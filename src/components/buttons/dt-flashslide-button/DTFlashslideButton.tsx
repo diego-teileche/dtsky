@@ -1,13 +1,22 @@
+import { CSSProperties } from "react"
 import styles from "./styles.module.sass"
+
+interface CustomStyle extends CSSProperties {
+	"--size"?: string
+	"--bg"?: string
+	"--arrow-bg"?: string
+	"--arrow-color"?: string
+}
 
 type Props = Readonly<{
 	text: string
 	href?: string
+	style?: CustomStyle
 }>
 
-export const DTFlashslideButton = ({ text, href }: Props) => {
+export const DTFlashslideButton = ({ text, href, style }: Props) => {
 	return (
-		<a href={href} className={`${styles["button"]}`}>
+		<a href={href} style={style} className={`${styles["button"]}`}>
 			{text}
 			<span className={`${styles["span"]}`}>
 				<svg

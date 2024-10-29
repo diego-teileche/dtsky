@@ -3,6 +3,7 @@ import styles from "./styles.module.sass"
 
 interface CustomStyle extends CSSProperties {
 	"--fontSize"?: string
+	"--color"?: string
 }
 
 type Props = Readonly<{

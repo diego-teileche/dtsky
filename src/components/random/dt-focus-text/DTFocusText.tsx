@@ -8,14 +8,14 @@ interface CustomStyle extends CSSProperties {
 }
 
 type Props = Readonly<{
-	word: string
+	text: string
 	style?: CustomStyle
 }>
 
-export const DTFocusText = ({ word, style }: Props) => {
+export const DTFocusText = ({ text, style }: Props) => {
 	return (
 		<h2 style={style} className={`${styles["h2"]}`}>
-			{word.split("").map((letter, index) => (
+			{text.split("").map((letter, index) => (
 				<span key={index} className={`${styles["span"]}`}>
 					<i className={`${styles["i"]}`}></i>
 					{letter}

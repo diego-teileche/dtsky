@@ -17,6 +17,6 @@ type Story = StoryObj<typeof meta>
 
 export const FocusText: Story = {
 	args: {
-		word: "Diego",
+		text: "Diego",
 	},
 }

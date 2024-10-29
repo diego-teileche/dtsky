@@ -1,7 +1,7 @@
 .loader
   position: relative
-  width: var(--size, 200px)
-  height: var(--size, 200px)
+  width: var(--size, 100px)
+  height: var(--size, 100px)
   background: var(--bg, #1a1a1f)
   display: flex
   justify-content: center
@@ -82,6 +82,7 @@
 .loader .h3
   color: var(--loaderColor, #03e9f4)
   overflow: hidden
+  font-size: calc( var(--size, 100px) * 0.1 )
   letter-spacing: var(--tracking, 2px)
   border-right: 1px solid var(--loaderColor, #03e9f4)
   transition: .5s
@@ -95,4 +96,4 @@
   0%, 90%, 100%
     width: 0px
   30%, 60%
-    width: var(--typingEffect-width, 100.89px)
+    width: calc( var(--size, 100px) * 0.6 )
